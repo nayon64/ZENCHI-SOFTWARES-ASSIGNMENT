@@ -38,15 +38,26 @@
 		<p>This should not take to long. In the mean time. You can customise your cookie weiget. You can always chang these letter.</p>
 		<div class="d-flex justify-content-between">
 			<h6>Color</h6>
-			<input type="color">
+			<div class="d-flex align-items-center">
+				<div id="color-slot" class="color-slot me-3"></div>
+				<input onchange="" id="color-picker" type="color">
+			</div>
 		</div>
+		
 		<div class="d-flex align-items-center justify-content-between mt-2">
 			<h6>Position</h6>
-			<select class="form-select w-25 inline-block" aria-label="Default select example">
-				<option selected value="bottom-left">Bottom Left</option>
-				<option value="bottom-right">Bottom Right</option>
+			<select id="selectBox" class="form-select w-25 inline-block" aria-label="Default select example" onchange="changeFunc()">
+				<option selected value="1" id="positionLeft">Bottom Left</option>
+				<option value="2" id="positionRight">Bottom Right</option>
 				
 			</select>
+		</div>
+	</div>
+	<div id="card" class="card col-md-3 p-4">
+		<h6>This is the cookie widget</h6>
+		<p>You will be able to modify this look and feel of this on your site letter</p>
+		<div>
+			<button id="explore-btn" class="border-0 px-3 py-2 text-white rounded-2">Explore..</button>
 		</div>
 	</div>
 
